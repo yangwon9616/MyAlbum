@@ -17,8 +17,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vT5-cE-ddU">
-                                <rect key="frame" x="174.5" y="639" width="65" height="30"/>
-                                <state key="normal" title="눌러주세요"/>
+                                <rect key="frame" x="152.5" y="659" width="109" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <state key="normal" title="눌러주세요">
+                                    <color key="titleColor" systemColor="systemPinkColor"/>
+                                </state>
                                 <connections>
                                     <action selector="btn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V58-oo-HSN"/>
                                 </connections>
@@ -29,7 +32,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="DWc-Iz-jdQ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="DWc-Iz-jdQ">
                                 <rect key="frame" x="107" y="353" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="bWW-N6-P63"/>
@@ -37,7 +40,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000000000000000000000$" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9X6-wg-pAZ">
-                                <rect key="frame" x="43.5" y="573" width="327" height="26"/>
+                                <rect key="frame" x="43.5" y="593" width="327" height="26"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="21"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -46,7 +49,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="9X6-wg-pAZ" firstAttribute="top" secondItem="DWc-Iz-jdQ" secondAttribute="bottom" constant="20" id="2co-Ky-ov0"/>
+                            <constraint firstItem="9X6-wg-pAZ" firstAttribute="top" secondItem="DWc-Iz-jdQ" secondAttribute="bottom" constant="40" id="2co-Ky-ov0"/>
                             <constraint firstItem="dAs-fr-PYb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="7vg-0j-ke1"/>
                             <constraint firstItem="dAs-fr-PYb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="TLq-19-eNs"/>
                             <constraint firstItem="vT5-cE-ddU" firstAttribute="top" secondItem="9X6-wg-pAZ" secondAttribute="bottom" constant="40" id="iUC-YG-WTT"/>
@@ -70,6 +73,9 @@
         <image name="profile" width="2160" height="2874"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -10,7 +10,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var pictureImage: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        priceLabel.text = "\(currentValue)$ 입니다"
+        refresh()
     }
 
     
@@ -30,16 +30,17 @@ class ViewController: UIViewController {
         // 얼럿을 실행해줘야 함
         // 변수가 담긴 함수를 만들어야 하지 않을까?
   
-        let action = UIAlertAction(title: "구뜨", style: .default, handler: nil)
+        let action = UIAlertAction(title: "구뜨", style: .default, handler: {action in self.refresh()})
    
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-        
-        let randomPrice = arc4random_uniform(99999) + 1
-        
-        currentValue = Int(randomPrice)
-        priceLabel.text = "\(currentValue) $ 입니다"
         }
+    //인스턴스 함수
+    func refresh(){
+        let randomPrice = arc4random_uniform(99999) + 1
+        currentValue  =  Int(randomPrice)
+        priceLabel.text = "나는 \(currentValue) $ 입니다"
+    }
 }
     
 
